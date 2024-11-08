@@ -1,5 +1,8 @@
 import "./App.css";
+import AuthorDetail from "./AuthorDetail";
 
 export default function App() {
-  return <div>App</div>;
+  return <div>
+    <AuthorDetail/>
+  </div>;
 }
