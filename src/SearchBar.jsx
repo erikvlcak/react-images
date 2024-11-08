@@ -2,16 +2,19 @@
 
 export default function SearchBar({ setKeyword, fetchImages }) {
   return (
-    <div>
-      <h1>Search images by this keyword: </h1>
+    <div className="searchArea">
+      <div className="seachHeader">Search images by this keyword: </div>
       <input
+        className="searchBar"
         onChange={(e) => setKeyword(e.target.value)}
         type="text"
         name="search"
         id="search"
         placeholder="Type the keyword here..."
       />
-      <button onClick={fetchImages}>Search</button>
+      <button className="searchButton" onClick={fetchImages}>
+        Search
+      </button>
     </div>
   );
 }
