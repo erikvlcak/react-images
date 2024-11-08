@@ -1,31 +1,48 @@
+body{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.portoflio-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio_photos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px;
+}
+
 * {
-  box-sizing: border-box;
-  outline: 1px solid red;
+    box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 a {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .profile {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .homepage__results {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .img__result {
-  width: 400px;
-  height: auto;
-  object-fit: contain;
+    width: 400px;
+    height: auto;
+    object-fit: contain;
 }
 
 .profile__img-author {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
 }
