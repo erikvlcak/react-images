@@ -1,8 +1,13 @@
+import Homepage from "./Homepage";
+import AuthorDetail from "./AuthorDetail";
 import "./App.css";
 import AuthorDetail from "./AuthorDetail";
 
 export default function App() {
-  return <div>
-    <AuthorDetail/>
-  </div>;
+  return (
+    <>
+      <Homepage />
+      <AuthorDetail />
+    </>
+  );
 }
