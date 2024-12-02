@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import { Link } from "react-router-dom";
 import ig_icon from "./assets/icons8-instagram.svg";
 
 export default function SearchResults({ images, keyword, setDetailImg, showDetailImg, setShowDetailImg }) {
@@ -27,7 +27,9 @@ export default function SearchResults({ images, keyword, setDetailImg, showDetai
                       </a>
                     )}
 
-                    <button>View {item.user.first_name}&apos;s portfolio</button>
+                    <Link to={"/author/" + item.user.username}>
+                      <button className="button">View {item.user.first_name}&apos;s portfolio</button>
+                    </Link>
                   </div>
                   {/* <div>{item.description}</div> */}
                   <img

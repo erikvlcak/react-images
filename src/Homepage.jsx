@@ -6,7 +6,7 @@ import apikey from "../keys.js";
 import ImageDetails from "./ImageDetails.jsx";
 
 export default function Homepage() {
-  const [images, setImages] = useState(null);
+  const [images, setImages] = useState([]);
   const [keyword, setKeyword] = useState("nature");
   const [detailImg, setDetailImg] = useState("");
   const [showDetailImg, setShowDetailImg] = useState(false);
@@ -22,7 +22,8 @@ export default function Homepage() {
     setLoading(false);
   }
 
-  useEffect(() => fetchImages, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => fetchImages(), []);
 
   return (
     <>
